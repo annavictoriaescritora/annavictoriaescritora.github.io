@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,10 @@
       "url": "https://annavictoriaescritora.github.io/",
       "sameAs": [
         "https://www.amazon.com.br/stores/Anna-Vict%C3%B3ria-Machado-de-Souza/author/B0FLW1HSZW",
-        "https://www.instagram.com/an.na.victory?igsh=MXYzNW15aGhodTkweA=="
+        "https://www.instagram.com/an.na.victory?igsh=MXYzNW15aGhodTkweA==",
+"https://www.youtube.com/live/ewUudFB4RDw?si=IV4G5IVVJKFSBD8K",
+"https://youtube.com/@anna.autora?si=667XxbN7amt6Nv0e",
+"https://uiclap.bio/annavictoriamdesouza"
       ]
     }
     </script>
@@ -78,6 +81,35 @@
             .banner-text-content { width: 90%; padding: 20px; text-align: center; margin: 0 auto; }
             .banner-container { justify-content: center; }
         }
+   /* Cole aqui dentro do <style> que já existe no seu site */
+.review-row {
+    padding: 20px 0 40px 0;
+    text-align: left;
+}
+.review-stars { 
+    color: #8e8dbe; 
+    font-size: 0.9rem; 
+    margin-bottom: 2px; 
+}
+.review-user { 
+    font-weight: 600; 
+    font-size: 0.95rem; 
+    color: #1a1a1a; 
+    display: block;
+}
+.review-verified { 
+    color: #8e8dbe; 
+    font-size: 0.75rem; 
+    font-weight: 600; 
+    margin-bottom: 12px; 
+    display: block; 
+}
+.review-text { 
+    font-size: 0.95rem; 
+    line-height: 1.6; 
+    color: #444; 
+    max-width: 850px;
+}
     </style>
 </head>
 <body>
@@ -98,7 +130,7 @@
         <div class="tab-pane fade show active py-5" id="home">
             <div class="container text-center">
                 <section id="sobre-mim" class="mb-5">
-                    <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/s1rnaeq0e9gkvtecibc7krbifh._SY600_.jpg" class="rounded-circle mb-4 shadow-sm" width="150">
+                    <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/pkd8jik6o28jhjlm0m6oq1a4h4._SX300_CR0%2C0%2C300%2C300_.jpg" class="rounded-circle mb-4 shadow-sm" width="150">
                     <h2 class="serif">Sobre a Autora</h2>
                     <p class="mx-auto text-muted" style="max-width: 700px; line-height: 1.8;">
                         Anna Victória é uma escritora nacional que transforma o romance intenso em tramas de suspense psicológico instigantes. Com foco na criação de universos profundos, suas obras convidam o leitor a questionar a realidade enquanto se entrega a emoções reais e envolventes.
@@ -128,25 +160,71 @@
                     </div>
                 </div>
 
-                <section class="eval-section mt-5">
-                    <h2 class="serif mb-5">O que os leitores dizem</h2>
-                    <div id="carouselEvals" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="testimonial-content mx-auto" style="max-width: 800px;">
-                                    <p class="testimonial-text">"História linda, que me pegou desde a primeira página. Tem personagens cativantes, e uma trama que se desenrola super bem. É uma leitura 5 estrelas!"</p>
-                                    <span class="testimonial-author">AVALIAÇÃO AMAZON</span>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonial-content mx-auto" style="max-width: 800px;">
-                                    <p class="testimonial-text">"Livro muito bem escrito, recomendo a leitura. Parabéns para a jovem autora!"</p>
-                                    <span class="testimonial-author">USUÁRIO AMAZON</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+                <section class="eval-section mt-5" style="background-color: #fff; border: none;">
+    <div class="container">
+        <h2 class="serif text-center mb-5">O que os leitores dizem</h2>
+        
+        <div class="mx-auto" style="max-width: 850px;">
+            
+            <div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitor</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"História linda, que me pegou desde a primeira página. Tem personagens cativantes, e uma trama que se desenrola super bem. É uma leitura 5 estrelas!"</p>
+            </div>
+
+            <div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitor</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"Livro muito bem escrito, recomendo a leitura. Parabéns para a jovem autora!"</p>
+            </div>
+
+            <div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitora</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"Eu li seu livro mais de duas vezes que livro bom, eu amei; Amei cada estrutura, cada detalhe do personagem!"</p>
+            </div>
+<div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitora</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"Adorei as cenas de Ruby é esse casal promete padrão próximo livro!
+Nada aqui é simples ou seguro. Cada troca parece uma jogada estratégica que você só entende depois de alguns capítulos.
+E Ethan… foi meu personagem favorito, engraçado e ácido;Daqueles personagens que roubam a cena sem pedir licença. Perfeição! Espero ansiosamentee o segundo livro desta saga!"</p>
+        </div>
+ <div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitora</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"É o tipo de história que faz a gente querer “só mais um capítulo”... e quando vê, já acabou."</p>
+            </div>
+<div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitor</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"A escrita é fluida e os personagens são bem construídos. Recomendo!"</p>
+            </div>
+ <div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitora</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"Eu NÃO esperava me envolver tanto. É aquele romance que aperta o peito, acelera o coração e deixa a gente pensando nos personagens mesmo depois de fechar o livro. A conexão entre eles é intensa, cheia de conflitos e sentimentos que doem do jeito certo.</p>
+            </div>
+ <div class="review-row">
+                <div class="review-stars">★★★★★</div>
+                <span class="review-user">Leitora</span>
+                <span class="review-verified">Compra verificada Amazon</span>
+                <p class="review-text">"O que dizer desse livro, maravilhoso do início ao fim. Deixo aqui, minha opinião, tanto quanto leitora, quanto professora dessa aluna maravilhosa.
+Você tem talento! Adorei receber o seu livro, adorei a forma como desenrolou a história de forma que nos prendesse. Obrigada pelo carinho! Continue assim, a melhor sensação para um professor é ver seus alunos voando alto  Assinado: Thammy - Professora de química"</p>
+            </div>
+        <div class="text-center mt-4">
+            <p class="small text-muted italic" style="letter-spacing: 1px;">Média de 4.9/5 estrelas baseada em avaliações de leitores.</p>
+        </div>
+       </div>
+    </div>
+</section>
             </div>
         </div>
 
@@ -160,8 +238,9 @@
                     </div>
                     <div class="col-md-8">
                         <h2 class="serif">Promessa Nostra</h2>
-                        <p class="text-muted">Arielle aceita recomeçar na Itália e entra num jogo sofisticado da elite europeia. No centro dele está Matteo D’Avernoir.</p>
-                        <a href="https://www.amazon.com.br/dp/B0FKL4T8GX" target="_blank" class="btn-buy">AMAZON</a>
+                        <p class="text-muted">Arielle aceita recomeçar na Itália e entra num jogo sofisticado da elite europeia. No centro dele está Matteo D’Avernoir que tem seus próprios planos. E Arielle sem saber faz parte deles.</p>
+                        <a href="https://www.amazon.com.br/dp/B0FKL4T8GX" target="_blank" class="btn-buy">E-BOOK AMAZON</a>
+   <a href="https://loja.uiclap.com/titulo/ua148940/" target="_blank" class="btn-buy">LIVRO FÍSICO UICLAP</a>
                     </div>
                 </div>
 
@@ -171,7 +250,7 @@
                     </div>
                     <div class="col-md-8">
                         <h2 class="serif">A Jogada</h2>
-                        <p class="text-muted">O primeiro livro de uma saga sobre poder, controle e tecnologia.</p>
+                        <p class="text-muted">O primeiro livro de uma saga sobre poder, controle e tecnologia. Onde a sociedade foi dividida em silêncio; Resta apenas uma pergunta: Jogar contra... ou se unir?</p>
                         <a href="https://www.amazon.com.br/dp/B0GFQCWLNG" target="_blank" class="btn-buy">E-BOOK AMAZON</a>
                         <a href="https://loja.uiclap.com/titulo/ua145819/" target="_blank" class="btn-buy">LIVRO FÍSICO UICLAP</a>
                     </div>
@@ -187,10 +266,36 @@
                         <p class="text-muted">O próximo movimento do sistema está sendo escrito. Prepare-se para a continuação desta saga eletrizante.</p>
                     </div>
                 </div>
+ <div class="row mt-5 justify-content-center align-items-center p-4" style="background: #fdf2f2; border: 2px dashed #8e8dbe; border-radius: 15px; margin: 0 10px;">
+    <div class="col-md-5 mb-3 mb-md-0 text-center">
+        <img src="edição especial1.jpeg" class="img-fluid rounded shadow-sm" alt="Edição Especial" style="max-height: 300px;">
+    </div>
+    <div class="col-md-7 text-center text-md-start">
+        <h3 class="serif" style="color: #1a1a1a;">✨ Edição Especial Autografada</h3>
+        <p class="text-muted">Receba um exemplar com dedicatória personalizada, e brindes surpresa direto na sua porta!</p>
+        <ul class="text-muted small" style="list-style: none; padding-left: 0;">
+            <li>✅ Autógrafo Personalizado</li>
+            <li>✅ Brindes Temáticos</li>
+            <li>✅ Para todo Brasil</li>
+        </ul>
+        <a href="https://wa.me/5531920099457?text=Oi%20Anna!%20Vim%20pelo%20site%20e%20quero%20o%20kit%20da%20Edição%20Especial%20com%20brindes." 
+           target="_blank" class="btn-buy" style="background: #1a1a1a; color: white; display: block; text-align: center;">ENCOMENDAR PELO WHATSAPP</a>
+    </div>
+</div>
             </div>
         </div>
 
         <div class="tab-pane fade py-5" id="parcerias">
+<div class="row align-items-center mb-5 p-4" style="background: #f8f9fa; border-radius: 15px; border-left: 5px solid #8e8dbe;">
+    <div class="col-md-5 text-center mb-3 mb-md-0">
+        <img src="entrevista-jornal.jpeg" class="img-fluid rounded shadow" alt="Entrevista Jornal Local" style="max-height: 250px;">
+    </div>
+    <div class="col-md-7">
+        <h4 class="serif">Destaque na Mídia: Jornal Local</h4>
+        <p class="text-muted">Tive a honra de conversar com a imprensa local sobre o universo de <strong>Promessa Nostra</strong> e os novos rumos da saga <strong>A Jogada</strong>. Confira a matéria completa no link abaixo:</p>
+        <a href="https://www.youtube.com/live/ewUudFB4RDw?si=IV4G5IVVJKFSBD8K" target="_blank" class="btn-buy" style="font-size: 0.7rem; padding: 8px 20px;"> VER REPORTAGEM</a>
+    </div>
+</div>
             <div class="container text-center">
                 <h2 class="serif mb-5">Parcerias e Formatos</h2>
                 <div class="row justify-content-center text-start mb-5">
@@ -203,10 +308,11 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6">
                         <a href="https://wa.me/5531920099457" target="_blank" class="btn-whatsapp">ME CHAME NO WHATSAPP</a>
-                        <div class="contact-box"><b>Email:</b> <a href="mailto:anyssouza.1@gmail.com" style="text-decoration:none; color:inherit;">anyssouza.1@gmail.com</a></div>
+                        <div class="contact-box"><b>Email:</b> <a href="mailto:Annavictoria.autora@gmail.com" style="text-decoration:none; color:inherit;">Annavictoria.autora@gmail.com</a></div>
                         <div class="row">
                             <div class="col-6"><a href="https://www.instagram.com/an.na.victory?igsh=MXYzNW15aGhodTkweA==" target="_blank" class="contact-box">INSTAGRAM</a></div>
                             <div class="col-6"><a href="https://www.tiktok.com/@an.na.victory?_r=1&_t=ZS-93PM63IVWcC" target="_blank" class="contact-box">TIKTOK</a></div>
+ <div class="col-6"><a href="https://youtube.com/@anna.autora?si=667XxbN7amt6Nv0e" target="_blank" class="contact-box">YOUTUBE</a></div>
                         </div>
                     </div>
                 </div>
@@ -219,4 +325,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
