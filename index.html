@@ -5,323 +5,360 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anna Victória M. de Souza | Escritora</title>
     
-   <meta name="google-site-verification" content="FW27DTVRWfLaSgQmhpzC-PuqGEvSVekRy7txzimmQNo" />
-    
-    <meta name="description" content="Site oficial da escritora Anna Victória M. de Souza. Autora de Promessa Nostra e A Jogada. Romances intensos e suspense psicológico.">
-    <meta name="keywords" content="Anna Victória, Escritora, Livros, Romance, Suspense Psicológico, Promessa Nostra, A Jogada">
-    <meta name="author" content="Anna Victória M. de Souza">
-
-    <meta property="og:title" content="Anna Victória M. de Souza | Escritora Nacional">
-    <meta property="og:description" content="Descubra as obras e o universo literário de Anna Victória.">
-    <meta property="og:image" content="https://m.media-amazon.com/images/S/amzn-author-media-prod/s1rnaeq0e9gkvtecibc7krbifh._SY600_.jpg">
-    <meta property="og:url" content="https://annavictoriaescritora.github.io/">
-
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Anna Victória M. de Souza",
-      "url": "https://annavictoriaescritora.github.io/",
-      "sameAs": [
-        "https://www.amazon.com.br/stores/Anna-Vict%C3%B3ria-Machado-de-Souza/author/B0FLW1HSZW",
-        "https://www.instagram.com/an.na.victory?igsh=MXYzNW15aGhodTkweA==",
-"https://www.youtube.com/live/ewUudFB4RDw?si=IV4G5IVVJKFSBD8K",
-"https://youtube.com/@anna.autora?si=667XxbN7amt6Nv0e",
-"https://uiclap.bio/annavictoriamdesouza"
-      ]
-    }
-    </script>
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@200;400;600&family=Kalam:wght@300;400&display=swap" rel="stylesheet">
     
     <style>
         :root {
-            --primary-color: #1a1a1a;
-            --accent-color: #8e8dbe;
-            --header-bg: #f4f4f7; 
-            --bg-light: #ffffff;
-            --text-muted: #555555;
-            --border-color: #e0e0e0;
+            --bg-bege: #fdfbf7;
+            --lilasm-suave: #eaddff;
+            --vinho-astra: #5a1a1a;
+            --gold-scrap: #c5a059;
+            --text-dark: #1a1a1a;
         }
 
-        body { font-family: 'Inter', sans-serif; color: var(--primary-color); background-color: var(--bg-light); }
+        body { background-color: var(--bg-bege); color: var(--text-dark); font-family: 'Inter', sans-serif; overflow-x: hidden; }
         h1, h2, h3, .serif { font-family: 'Playfair Display', serif; }
+        .handwritten { font-family: 'Kalam', cursive; }
 
-        .nav-tabs { border-bottom: 1px solid var(--border-color); justify-content: center; background: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; }
-        .nav-tabs .nav-link { color: var(--text-muted); border: none; font-weight: 400; text-transform: uppercase; letter-spacing: 2px; font-size: 0.85rem; margin: 0 20px; transition: 0.3s; }
-        .nav-tabs .nav-link.active { color: var(--primary-color) !important; border-bottom: 2px solid var(--primary-color) !important; background: none !important; font-weight: 600; }
+        /* NAVEGAÇÃO */
+        .nav-tabs { border: none; justify-content: center; padding: 20px; sticky-top: 0; background: var(--bg-bege); z-index: 1000; }
+        .nav-tabs .nav-link { color: #888; border: none; text-transform: uppercase; letter-spacing: 2px; font-size: 0.7rem; font-weight: 600; margin: 0 15px; }
+        .nav-tabs .nav-link.active { color: var(--text-dark); border-bottom: 2px solid var(--vinho-astra); }
 
-        .banner-container {
-            width: 100%; height: 400px; border-radius: 15px; overflow: hidden; position: relative;
-            display: flex; align-items: center; justify-content: flex-end;
-            margin: 40px 0; border: 1px solid var(--border-color);
+        /* FOTOS INCLINADAS */
+        .photo-collage { position: relative; height: 450px; margin-bottom: 50px; }
+        .photo-item { width: 220px; height: 300px; object-fit: cover; position: absolute; box-shadow: 10px 10px 30px rgba(0,0,0,0.1); border: 10px solid white; transition: 0.3s; }
+        .img-1 { transform: rotate(-8deg); left: 10%; z-index: 2; }
+        .img-2 { transform: rotate(5deg); left: 25%; top: 40px; z-index: 1; }
+
+        /* FAIXA LILÁS ESQUERDA (Gostos) */
+        .sidebar-lilac {
+            background-color: var(--lilasm-suave);
+            width: 280px; padding: 40px 20px; position: absolute; left: 0; top: 450px; z-index: 0; min-height: 400px; border-radius: 0 30px 30px 0;
         }
-        .banner-bg { position: absolute; width: 100%; height: 100%; object-fit: cover; z-index: 1; left: 0; filter: grayscale(10%); }
-        .banner-text-content { position: relative; z-index: 2; width: 50%; padding: 30px; text-align: left; background: rgba(255,255,255,0.6); backdrop-filter: blur(5px); border-radius: 15px; margin-right: 40px; }
 
-        .eval-section { padding: 60px 0; background-color: #fafafa; border-radius: 20px; }
-        .testimonial-content {
-            background: #fff; padding: 40px; border-radius: 10px; border: 1px solid var(--border-color);
-            min-height: 250px; display: flex; flex-direction: column; justify-content: center; text-align: center;
+        /* ABA LATERAL HORIZONTAL (ESTILO LATEST UPDATES) - COR LILÁS */
+        .latest-updates-tab {
+            position: relative;
+            background: #fff;
+            border: 1px solid #eee;
+            border-left: 8px solid var(--lilasm-suave); /* Borda Lilás */
+            padding: 30px;
+            margin: 40px 0;
+            width: 100%; 
+            max-width: 800px;
+            border-radius: 0 15px 15px 0;
+            box-shadow: 10px 10px 30px rgba(0,0,0,0.03);
+            display: flex;
+            align-items: center;
+            gap: 30px;
         }
-        .testimonial-text { font-style: italic; font-size: 1.1rem; color: var(--primary-color); margin-bottom: 15px; }
-        .testimonial-author { font-size: 0.8rem; letter-spacing: 1px; color: var(--accent-color); font-weight: 600; }
 
-        .book-row { padding: 60px 0; border-bottom: 1px solid var(--border-color); align-items: center; }
-        .book-img-shadow { max-width: 250px; border-radius: 4px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); width: 100%; transition: 0.3s; }
-        .book-img-shadow:hover { transform: translateY(-5px); }
-        .btn-buy { border: 1px solid var(--primary-color); color: var(--primary-color); border-radius: 0; padding: 12px 30px; text-decoration: none; font-size: 0.8rem; font-weight: 600; letter-spacing: 1px; transition: 0.3s; display: inline-block; margin-top: 15px; margin-right: 10px; }
-        .btn-buy:hover { background: var(--primary-color); color: white; }
-
-        .contact-box { padding: 20px; border: 1px solid var(--border-color); margin-bottom: 15px; text-decoration: none; color: var(--primary-color); display: block; font-size: 0.9rem; }
-        .btn-whatsapp { background: #1a1a1a; color: white !important; padding: 20px; border-radius: 5px; display: block; text-decoration: none; font-weight: 600; text-align: center; margin-bottom: 40px; letter-spacing: 1px; }
-
-        @media (max-width: 768px) {
-            .banner-text-content { width: 90%; padding: 20px; text-align: center; margin: 0 auto; }
-            .banner-container { justify-content: center; }
+        .tab-label {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--lilasm-suave); /* Fundo Lilás */
+            color: var(--vinho-astra); /* Texto em contraste */
+            font-size: 0.65rem;
+            padding: 5px 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-weight: bold;
         }
-   /* Cole aqui dentro do <style> que já existe no seu site */
-.review-row {
-    padding: 20px 0 40px 0;
-    text-align: left;
-}
-.review-stars { 
-    color: #8e8dbe; 
-    font-size: 0.9rem; 
-    margin-bottom: 2px; 
-}
-.review-user { 
-    font-weight: 600; 
-    font-size: 0.95rem; 
-    color: #1a1a1a; 
-    display: block;
-}
-.review-verified { 
-    color: #8e8dbe; 
-    font-size: 0.75rem; 
-    font-weight: 600; 
-    margin-bottom: 12px; 
-    display: block; 
-}
-.review-text { 
-    font-size: 0.95rem; 
-    line-height: 1.6; 
-    color: #444; 
-    max-width: 850px;
-}
+
+        /* DEPOIMENTOS ESTILO AMAZON */
+        .amazon-review {
+            background: transparent;
+            border-bottom: 1px solid #eee;
+            padding: 20px 0;
+            margin-bottom: 10px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .amazon-review .stars {
+            color: #ffa41c;
+            font-size: 1rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .review-text {
+            font-size: 1.05rem;
+            color: #111;
+            line-height: 1.5;
+            margin-bottom: 5px;
+        }
+
+        /* VOCÊ SABIA */
+        .voce-sabia {
+            border: 1px solid var(--gold-scrap); padding: 25px; margin-top: 50px; border-radius: 4px;
+            position: relative; background: #fff; max-width: 800px;
+        }
+        .voce-sabia::after { content: '✦'; position: absolute; top: -10px; right: 10px; color: var(--gold-scrap); }
+
+        .agente-photo { transform: rotate(-5deg); border: 10px solid white; box-shadow: 5px 5px 15px rgba(0,0,0,0.1); width: 250px; }
+        .social-circle { width: 45px; height: 45px; border: 1px solid #ddd; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; margin: 5px; color: var(--text-dark); text-decoration: none; transition: 0.3s; }
+        .social-circle:hover { background: var(--lilasm-suave); border-color: var(--lilasm-suave); }
     </style>
 </head>
 <body>
 
-    <header class="text-center py-5" style="background-color: var(--header-bg);">
-        <h1 class="display-5 serif">Anna Victória M. de Souza</h1>
-        <p class="small text-uppercase" style="letter-spacing: 4px; font-weight: 300;">Escritora Nacional Independente</p>
-    </header>
-
-    <ul class="nav nav-tabs sticky-top" id="myTab" role="tablist">
-        <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home">Início</button></li>
-        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#livros">Livros</button></li>
-        <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#parcerias">Parcerias</button></li>
-    </ul>
+    <nav class="nav nav-tabs sticky-top">
+        <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#home">Início</button>
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#obras">Obras</button>
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#astra">A.S.T.R.A</button>
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#parcerias">Parcerias & Contatos</button>
+        <button class="nav-link" data-bs-toggle="tab" data-bs-target="#agente">Agente Literário</button>
+    </nav>
 
     <div class="tab-content">
         
-        <div class="tab-pane fade show active py-5" id="home">
+        <div class="tab-pane fade show active" id="home">
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-md-3">
+                        <div class="sidebar-lilac">
+                            <h4 class="serif italic">Meus Gostos Literários</h4>
+                            <ul class="list-unstyled handwritten mt-4" style="line-height: 2.2; font-size: 1.2rem;">
+                                <li>• Dark Romance</li>
+                                <li>• Suspense Psicológico</li>
+                                <li>• Distopias Tecnológicas</li>
+                                <li>• As mil partes do meu coração - Livro por Colleen Hoover</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-md-9 py-5 pe-5">
+                        <div class="photo-collage">
+                            <img src="Sua_Foto_1.jpg" class="foto-autora2.jpeg">
+                            <img src="Sua_Foto_2.jpg" class="foto-autora.3.jpeg">
+                        </div>
+
+                        <div class="content-text ps-md-5">
+                            <h2 class="serif display-4">Oii, me chamo Anna</h2>
+                            
+                            <div class="handwritten mt-4" style="font-size: 1.4rem; line-height: 1.8; max-width: 800px;">
+                                Tenho 16 anos e escrever sempre foi minha forma de dar voz aos mundos que habitam em mim. 
+                                Minha jornada na literatura começou aos 15, com a publicação do meu primeiro livro, 
+                                e desde então, a escrita tornou-se meu refúgio e minha maior paixão. 
+                                Acredito que a literatura tem o poder de transformar tensões em arte e sentimentos em conexões reais.
+                            </div>
+
+                            <div class="latest-updates-tab">
+                                <div class="tab-label">LATEST UPDATES</div>
+                                <div class="tab-content-inner">
+                                    <h4 class="serif mb-1">O Próximo Movimento do Sistema</h4>
+                                    <p class="text-muted small mb-3">A saga A Jogada está se expandindo. O Volume II está sendo arquitetado sob as sombras do Conselho.</p>
+                                    <span class="badge rounded-pill border text-dark fw-light" style="font-size: 0.7rem; padding: 6px 12px;">Lançamento: 2026</span>
+                                </div>
+                                <img src="Capa_volume2.png" style="width: 60px; border-radius: 3px;">
+                            </div>
+
+                            <h3 class="serif mt-5 mb-4">Vozes dos Leitores</h3>
+                            <div class="amazon-reviews-container">
+                                <div class="amazon-review">
+                                    <div class="stars">★★★★★</div>
+                                    <p class="review-text">"Uma narrativa que prende do início ao fim. Escrita impecável!"</p>
+                                    <small class="text-muted">— LEITOR AMAZON</small>
+                                </div>
+                                <div class="amazon-review">
+                                    <div class="stars">★★★★★</div>
+                                    <p class="review-text">"Personagens profundos e uma trama que surpreende a cada capítulo."</p>
+                                    <small class="text-muted">— LEITORA (SKOOB)</small>
+                                </div>
+<div class="amazon-review">
+                                    <div class="stars">★★★★★</div>
+                                    <p class="review-text">"Eu li seu livro mais de duas vezes que livro bom, eu amei; Amei cada estrutura, cada detalhe do personagem!"</p>
+                                    <small class="text-muted">— LEITORA AMAZON</small>
+                                </div>
+<div class="amazon-review">
+
+                                    <div class="stars">★★★★★</div>
+                                    <p class="review-text">"Adorei as cenas de Ruby, e esse casal promete para o próximo livro! Nada aqui é simples ou seguro. Cada troca parece uma jogada estratégica que você só entende depois de alguns capítulos. E Ethan… foi meu personagem favorito, engraçado e ácido;Daqueles personagens que roubam a cena sem pedir licença. Perfeição! Espero ansiosamentee o segundo livro desta saga!"</p>
+                                    <small class="text-muted">— LEITORA AMAZON</small>
+                                </div>
+<div class="amazon-review">
+                                   <div class="stars">★★★★★</div>
+                                    <p class="review-text">"É o tipo de história que faz a gente querer “só mais um capítulo”... e quando vê, já acabou."</p>
+                                    <small class="text-muted">— LEITORA (SKOOB)</small>
+                                </div>
+                                <div class="amazon-review">
+                                    <div class="stars">★★★★★</div>
+                                    <p class="review-text">"A escrita é fluida e os personagens são bem construídos. Recomendo!"</p>
+                                    <small class="text-muted">— LEITOR AMAZON</small>
+                                </div>
+                                <div class="amazon-review">
+                                    <div class="stars">★★★★★</div>
+                                    <p class="review-text">"Eu NÃO esperava me envolver tanto. É aquele romance que aperta o peito, acelera o coração e deixa a gente pensando nos personagens mesmo depois de fechar o livro. A conexão entre eles é intensa, cheia de conflitos e sentimentos que doem do jeito certo."</p>
+                                    <small class="text-muted">— LEITORA AMAZON</small>
+                                </div>
+                                <div class="amazon-review">
+                                    <div class="stars">★★★★★</div>
+                                    <p class="review-text">"O que dizer desse livro, maravilhoso do início ao fim. Deixo aqui, minha opinião, tanto quanto leitora, quanto professora dessa aluna maravilhosa. Você tem talento! Adorei receber o seu livro, adorei a forma como desenrolou a história de forma que nos prendesse. Obrigada pelo carinho! Continue assim, a melhor sensação para um professor é ver seus alunos voando alto Assinado: Thammy - Professora de química"</p>
+                                    <small class="text-muted">— LEITORA AMAZON</small>
+                            </div>
+                        </div>
+
+                            <div class="voce-sabia">
+                                <h5 class="serif fw-bold" style="color: var(--gold-scrap);">Você Sabia?</h5>
+                                <p class="small mb-0">
+                                    O gênero do romance moderno ganhou força no século XVIII como uma ferramenta essencial para a inserção das mulheres na literatura profissional. 
+                                    O que hoje vemos como entretenimento, nasceu como um ato de resistência e ocupação de espaço feminino.
+A "Brecha" no Sistema: Como o romance era um gênero novo e "sem prestígio" (comparado à poesia ou filosofia), os homens não o vigiavam tanto. Isso abriu uma porta para as mulheres entrarem sem pedir licença.
+Pela primeira vez, escrever virou um trabalho. Autoras começaram a ganhar seu próprio dinheiro e a negociar com editores, saindo da dependência total de pais ou maridos.
+O "Doméstico" vira Político, elas pegaram o dia a dia — casamentos, jantares e fofocas — e mostraram que ali existiam dramas profundos e injustiças sociais. O privado tornou-se público.
+Mary Wollstonecraft (Uma das protagonistas desta revolução) Usou a ficção para denunciar que a falta de educação para mulheres era uma forma de escravidão intelectual.
+
+Elas transformaram a "fofoca" em sociologia e o "sentimento" em política. Elas provaram que a vida dentro de uma sala de estar era tão complexa e digna de literatura quanto uma guerra no campo de batalha.
+Foi a primeira vez na história que a experiência feminina virou o centro do universo narrativo, e vem oculpando espaço nas estantes desde então.</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade py-5" id="obras">
             <div class="container text-center">
-                <section id="sobre-mim" class="mb-5">
-                    <img src="https://m.media-amazon.com/images/S/amzn-author-media-prod/pkd8jik6o28jhjlm0m6oq1a4h4._SX300_CR0%2C0%2C300%2C300_.jpg" class="rounded-circle mb-4 shadow-sm" width="150">
-                    <h2 class="serif">Sobre a Autora</h2>
-                    <p class="mx-auto text-muted" style="max-width: 700px; line-height: 1.8;">
-                        Anna Victória é uma escritora nacional que transforma o romance intenso em tramas de suspense psicológico instigantes. Com foco na criação de universos profundos, suas obras convidam o leitor a questionar a realidade enquanto se entrega a emoções reais e envolventes.
-                    </p>
-                </section>
-
-                <div id="marketingCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active" data-bs-interval="5000">
-                            <div class="banner-container">
-                                <img src="Banner-agenda.jpg" class="banner-bg">
-                                <div class="banner-text-content">
-                                    <h2 class="serif">Agenda Aberta</h2>
-                                    <p class="text-muted">Disponível para eventos literários, palestras e feiras. Vamos levar a literatura nacional mais longe!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item" data-bs-interval="5000">
-                            <div class="banner-container">
-                                <img src="escrita-banner.jpg" class="banner-bg">
-                                <div class="banner-text-content">
-                                    <h2 class="serif">Em Andamento</h2>
-                                    <p class="text-muted">A saga "A Jogada" continua ganhando forma. Fique de olho para os próximos movimentos desta história.</p>
-                                </div>
-                            </div>
-                        </div>
+                <h2 class="serif mb-5">Minhas Obras</h2>
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <img src="https://m.media-amazon.com/images/I/71HcqkAFdZL._UF1000,1000_QL80_.jpg" class="w-75 shadow-lg rounded mb-3">
+                        <h3 class="serif">Promessa Nostra</h3>
+                        <a href="#" class="btn btn-outline-dark btn-sm">E-book</a>
+                        <a href="#" class="btn btn-dark btn-sm">Físico</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="https://m.media-amazon.com/images/I/61LLEpS1urL.jpg" class="w-75 shadow-lg rounded mb-3">
+                        <h3 class="serif">A Jogada</h3>
+                        <a href="#" class="btn btn-outline-dark btn-sm">E-book</a>
+                        <a href="#" class="btn btn-dark btn-sm">Físico</a>
                     </div>
                 </div>
+                <div class="mt-5 p-4 border rounded bg-white">
+                    <h4 class="serif">✨ Edição Limitada</h4>
+                    <p class="text-muted">Garanta seu exemplar físico com brindes exclusivos e autógrafo.</p>
+                    <a href="https://wa.me/5531920099457" class="btn btn-dark">Consultar Disponibilidade</a>
+                </div>
+            </div>
+        </div>
 
-                <section class="eval-section mt-5" style="background-color: #fff; border: none;">
-    <div class="container">
-        <h2 class="serif text-center mb-5">O que os leitores dizem</h2>
-        
-        <div class="mx-auto" style="max-width: 850px;">
+        <div class="tab-pane fade" id="astra">
+    <div class="container py-5">
+        <div class="p-5 text-center text-white rounded-5" style="background: var(--vinho-astra); border: 2px solid var(--lilasm-suave);">
+            <h1 class="handwritten" style="font-size: 4rem;">Simulador</h1>
+            <p class="lead">O sistema que rege o universo da trilogia.</p>
+            <hr class="w-25 mx-auto opacity-25">
+            <p class="mx-auto mt-4" style="max-width: 600px;">
+                Esta interface ajuda a desvendar os próximos mistérios dos volumes futuros.
+            </p>
             
-            <div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitor</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"História linda, que me pegou desde a primeira página. Tem personagens cativantes, e uma trama que se desenrola super bem. É uma leitura 5 estrelas!"</p>
-            </div>
-
-            <div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitor</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"Livro muito bem escrito, recomendo a leitura. Parabéns para a jovem autora!"</p>
-            </div>
-
-            <div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitora</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"Eu li seu livro mais de duas vezes que livro bom, eu amei; Amei cada estrutura, cada detalhe do personagem!"</p>
-            </div>
-<div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitora</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"Adorei as cenas de Ruby é esse casal promete padrão próximo livro!
-Nada aqui é simples ou seguro. Cada troca parece uma jogada estratégica que você só entende depois de alguns capítulos.
-E Ethan… foi meu personagem favorito, engraçado e ácido;Daqueles personagens que roubam a cena sem pedir licença. Perfeição! Espero ansiosamentee o segundo livro desta saga!"</p>
+            <a href="https://annavictoriaescritora.github.io/Portal.html/" 
+               target="_blank" 
+               class="btn btn-light mt-4 px-5 py-3 fw-bold">
+               INICIAR EXPERIÊNCIA >_
+            </a>
+            
         </div>
- <div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitora</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"É o tipo de história que faz a gente querer “só mais um capítulo”... e quando vê, já acabou."</p>
-            </div>
-<div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitor</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"A escrita é fluida e os personagens são bem construídos. Recomendo!"</p>
-            </div>
- <div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitora</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"Eu NÃO esperava me envolver tanto. É aquele romance que aperta o peito, acelera o coração e deixa a gente pensando nos personagens mesmo depois de fechar o livro. A conexão entre eles é intensa, cheia de conflitos e sentimentos que doem do jeito certo.</p>
-            </div>
- <div class="review-row">
-                <div class="review-stars">★★★★★</div>
-                <span class="review-user">Leitora</span>
-                <span class="review-verified">Compra verificada Amazon</span>
-                <p class="review-text">"O que dizer desse livro, maravilhoso do início ao fim. Deixo aqui, minha opinião, tanto quanto leitora, quanto professora dessa aluna maravilhosa.
-Você tem talento! Adorei receber o seu livro, adorei a forma como desenrolou a história de forma que nos prendesse. Obrigada pelo carinho! Continue assim, a melhor sensação para um professor é ver seus alunos voando alto  Assinado: Thammy - Professora de química"</p>
-            </div>
-        <div class="text-center mt-4">
-            <p class="small text-muted italic" style="letter-spacing: 1px;">Média de 4.9/5 estrelas baseada em avaliações de leitores.</p>
-        </div>
-       </div>
-    </div>
-</section>
-            </div>
-        </div>
-
-        <div class="tab-pane fade py-5" id="livros">
-            <div class="container">
-                <h2 class="serif text-center mb-5">Obras Publicadas</h2>
-                
-                <div class="row book-row">
-                    <div class="col-md-4 text-center">
-                        <img src="https://m.media-amazon.com/images/I/61ydZAbuXQL.jpg" class="book-img-shadow">
-                    </div>
-                    <div class="col-md-8">
-                        <h2 class="serif">Promessa Nostra</h2>
-                        <p class="text-muted">Arielle aceita recomeçar na Itália e entra num jogo sofisticado da elite europeia. No centro dele está Matteo D’Avernoir que tem seus próprios planos. E Arielle sem saber faz parte deles.</p>
-                        <a href="https://www.amazon.com.br/dp/B0FKL4T8GX" target="_blank" class="btn-buy">E-BOOK AMAZON</a>
-   <a href="https://loja.uiclap.com/titulo/ua148940/" target="_blank" class="btn-buy">LIVRO FÍSICO UICLAP</a>
-                    </div>
-                </div>
-
-                <div class="row book-row">
-                    <div class="col-md-4 text-center">
-                        <img src="https://m.media-amazon.com/images/I/71HcqkAFdZL._AC_CR0%2C0%2C0%2C0_SX480_SY360_.jpg" class="book-img-shadow">
-                    </div>
-                    <div class="col-md-8">
-                        <h2 class="serif">A Jogada</h2>
-                        <p class="text-muted">O primeiro livro de uma saga sobre poder, controle e tecnologia. Onde a sociedade foi dividida em silêncio; Resta apenas uma pergunta: Jogar contra... ou se unir?</p>
-                        <a href="https://www.amazon.com.br/dp/B0GFQCWLNG" target="_blank" class="btn-buy">E-BOOK AMAZON</a>
-                        <a href="https://loja.uiclap.com/titulo/ua145819/" target="_blank" class="btn-buy">LIVRO FÍSICO UICLAP</a>
-                    </div>
-                </div>
-
-                <div class="row book-row border-0">
-                    <div class="col-md-4 text-center">
-                        <img src="Capa_volume2.png" class="book-img-shadow" alt="Capa Volume II em breve">
-                    </div>
-                    <div class="col-md-8">
-                        <h2 class="serif">A Jogada - Volume II</h2>
-                        <p class="text-muted"><em>Em fase de preparação.</em></p>
-                        <p class="text-muted">O próximo movimento do sistema está sendo escrito. Prepare-se para a continuação desta saga eletrizante.</p>
-                    </div>
-                </div>
- <div class="row mt-5 justify-content-center align-items-center p-4" style="background: #fdf2f2; border: 2px dashed #8e8dbe; border-radius: 15px; margin: 0 10px;">
-    <div class="col-md-5 mb-3 mb-md-0 text-center">
-        <img src="edição especial1.jpeg" class="img-fluid rounded shadow-sm" alt="Edição Especial" style="max-height: 300px;">
-    </div>
-    <div class="col-md-7 text-center text-md-start">
-        <h3 class="serif" style="color: #1a1a1a;">✨ Edição Especial Autografada</h3>
-        <p class="text-muted">Receba um exemplar com dedicatória personalizada, e brindes surpresa direto na sua porta!</p>
-        <ul class="text-muted small" style="list-style: none; padding-left: 0;">
-            <li>✅ Autógrafo Personalizado</li>
-            <li>✅ Brindes Temáticos</li>
-            <li>✅ Para todo Brasil</li>
-        </ul>
-        <a href="https://wa.me/5531920099457?text=Oi%20Anna!%20Vim%20pelo%20site%20e%20quero%20o%20kit%20da%20Edição%20Especial%20com%20brindes." 
-           target="_blank" class="btn-buy" style="background: #1a1a1a; color: white; display: block; text-align: center;">ENCOMENDAR PELO WHATSAPP</a>
     </div>
 </div>
-            </div>
-        </div>
 
         <div class="tab-pane fade py-5" id="parcerias">
-<div class="row align-items-center mb-5 p-4" style="background: #f8f9fa; border-radius: 15px; border-left: 5px solid #8e8dbe;">
-    <div class="col-md-5 text-center mb-3 mb-md-0">
-        <img src="entrevista-jornal.jpeg" class="img-fluid rounded shadow" alt="Entrevista Jornal Local" style="max-height: 250px;">
+            <div class="container">
+    <h2 class="serif mb-5">Parcerias e Mídia</h2>
+    
+   <div class="row mb-4 align-items-center bg-white p-4 rounded border shadow-sm">
+    <div class="col-md-5 text-center"> <a href="https://www.youtube.com/live/ewUudFB4RDw" target="_blank">
+            <img src="entrevista-jornal.jpeg" 
+                 class="img-fluid rounded shadow-sm" 
+                 style="max-height: 300px; width: 100%; object-fit: cover; border: 1px solid #ddd;" alt="Capa do Vídeo"></a>
+   </div>
+<div class="col-md-7 order-2 order-md-1">
+        <h4 class="serif mt-3 mt-md-0">Matéria: Literatura Independente</h4>
+        <p class="small text-muted">Uma entrevista sobre a autora jovem e detalhes dos lançamentos de suas obras.</p>
+        <a href="https://www.youtube.com/live/ewUudFB4RDw?si=KjzNyHuzzdh4Jfc7" target="_blank" class="btn btn-sm btn-outline-dark">VER REPORTAGEM</a>
     </div>
-    <div class="col-md-7">
-        <h4 class="serif">Destaque na Mídia: Jornal Local</h4>
-        <p class="text-muted">Tive a honra de conversar com a imprensa local sobre o universo de <strong>Promessa Nostra</strong> e os novos rumos da saga <strong>A Jogada</strong>. Confira a matéria completa no link abaixo:</p>
-        <a href="https://www.youtube.com/live/ewUudFB4RDw?si=IV4G5IVVJKFSBD8K" target="_blank" class="btn-buy" style="font-size: 0.7rem; padding: 8px 20px;"> VER REPORTAGEM</a>
+        </div>
+</div>
+
+<div class="row mb-4 align-items-center bg-white p-4 rounded border shadow-sm">
+    <div class="col-md-7 order-2 order-md-1">
+        <h4 class="serif mt-3 mt-md-0">Matéria: Literatura Independente</h4>
+        <p class="small text-muted">Um bate-papo sobre a literatura jovem e detalhes do lançamento de A Jogada.</p>
+        <a href="https://jornalnota.com.br/2026/03/09/romance-e-distopia-tecnologica-em-a-jogada-de-anna-victoria-m-de-souza/amp/" target="_blank" class="btn btn-sm btn-outline-dark">LER MATÉRIA</a>
+    </div>
+    <div class="col-md-5 order-1 order-md-2 text-center"> <img src="https://substackcdn.com/image/fetch/$s_!RrbC!,w_1200,h_400,c_pad,f_auto,q_auto:best,fl_progressive:steep,b_auto:border,b_rgb:fff7ed/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F721d5f08-a92a-46ea-884e-ece82f9ec79e_1073x1073.png" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-height: 300px; width: 100%; object-fit: cover;" alt="Matéria Jornal Nota">
     </div>
 </div>
-            <div class="container text-center">
-                <h2 class="serif mb-5">Parcerias e Formatos</h2>
-                <div class="row justify-content-center text-start mb-5">
-                    <div class="col-md-8">
-                        <div class="contact-box">📍 Sessão de Autógrafos & Lançamentos</div>
-                        <div class="contact-box">🎤 Bate-papo com Leitores & Palestras</div>
-                        <div class="contact-box">📚 Venda de Livros Consignados</div>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-md-6">
-                        <a href="https://wa.me/5531920099457" target="_blank" class="btn-whatsapp">ME CHAME NO WHATSAPP</a>
-                        <div class="contact-box"><b>Email:</b> <a href="mailto:Annavictoria.autora@gmail.com" style="text-decoration:none; color:inherit;">Annavictoria.autora@gmail.com</a></div>
-                        <div class="row">
-                            <div class="col-6"><a href="https://www.instagram.com/an.na.victory?igsh=MXYzNW15aGhodTkweA==" target="_blank" class="contact-box">INSTAGRAM</a></div>
-                            <div class="col-6"><a href="https://www.tiktok.com/@an.na.victory?_r=1&_t=ZS-93PM63IVWcC" target="_blank" class="contact-box">TIKTOK</a></div>
- <div class="col-6"><a href="https://youtube.com/@anna.autora?si=667XxbN7amt6Nv0e" target="_blank" class="contact-box">YOUTUBE</a></div>
-                        </div>
-                    </div>
+
+<div class="row mb-5 align-items-center bg-white p-4 rounded border shadow-sm" style="border-left: 5px solid #dcd0ff !important;">
+    <div class="col-md-5 text-center"> <img src="Doaçãobibli.jpeg" 
+             class="img-fluid rounded shadow-sm" 
+             style="max-height: 500px; width: 100%; object-fit: cover;" alt="Doação de Livros">
+    </div>
+    <div class="col-md-7">
+        <h4 class="serif mt-3 mt-md-0">Projeto de Doação de Livros</h4>
+        <p class="small text-muted">Exemplares físicos entregues à Biblioteca Pública Municipal Leonor de Aguiar Batista para fomentar a leitura e acessibilidade à obra. Veja no instagram da autora.</p>
+    </div>
+</div>
+    
+    <div class="text-center mt-5">
+        <h3 class="serif mb-4">Fale Comigo</h3>
+        <div class="d-flex justify-content-center flex-wrap">
+            <a href="https://www.instagram.com/an.na.victory" target="_blank" class="social-circle">IG</a>
+            <a href="https://www.tiktok.com/@an.na.victory" target="_blank" class="social-circle">TK</a>
+            <a href="https://youtube.com/@anna.autora" target="_blank" class="social-circle">YT</a>
+            <a href="https://wa.me/5531920099457" target="_blank" class="social-circle">WA</a>
+            <a href="mailto:Annavictoria.autora@gmail.com" class="social-circle">@</a>
                 </div>
             </div>
         </div>
-    </div> <footer class="text-center py-5 text-muted small border-top mt-5">
-        <p>© 2026 ANNA VICTÓRIA M. DE SOUZA</p>
+<div class="tab-pane fade py-5" id="agente" role="tabpanel">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    
+                    <div class="col-md-5 text-center mb-5 mb-md-0">
+                        <div style="background: white; padding: 15px 15px 45px 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.1); transform: rotate(-3deg); border: 1px solid #eee; display: inline-block;">
+                            <img src="foto_agente.jpg" alt="Agente Literário" class="img-fluid" style="width: 280px; height: 350px; object-fit: cover; background: #f9f9f9;">
+                            <p class="mt-3 mb-0 serif" style="color: #999; font-style: italic; font-size: 0.9rem;">Agente Literário</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 px-4 text-start">
+                        <h2 class="serif display-5 mb-4">Agente Literário</h2>
+                        <div style="border-left: 3px solid #c5a059; padding-left: 25px; font-size: 1.15rem; line-height: 1.8; color: #444;">
+                            <p>
+                                Atrás de cada grande história, existe um suporte fundamental. Minha jornada profissional é gerenciada pelo meu pai, que atua como meu <strong>Agente Literário</strong>.
+                            </p>
+                            <p>
+                                Ele é o responsável por toda a parte burocrática, negociações de parcerias e organização da minha carreira, garantindo que eu possa focar inteiramente na criação dos meus livros.
+                            </p>
+                        </div>
+                        
+                        <div class="mt-5 p-4 rounded-4 text-center" style="background: #fff; border: 1px dashed #c5a059;">
+                            <p class="small text-uppercase fw-bold mb-3" style="letter-spacing: 2px; color: #888;">Propostas Comerciais & Eventos</p>
+                            <a href="mailto:Annavictoria.autora@gmail.com" class="btn btn-dark w-100" style="border-radius: 50px; padding: 12px;">Enviar E-mail</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div> 
+        </div> <footer class="text-center py-5 text-muted border-top mt-5">
+        <p class="small">© 2026 ANNA VICTÓRIA M. DE SOUZA</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function lerMais() {
+            alert("O gênero do romance moderno nasceu como um ato de resistência feminina no século XVIII, permitindo que mulheres ocupassem espaços profissionais na literatura.");
+        }
+    </script>
 </body>
 </html>
